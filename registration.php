@@ -19,13 +19,13 @@ if (!empty($id)) {
     $sql = "INSERT INTO viewers(first_name,last_name,phone_number,email,password)
         values('$id','$name','$i','$j','$marks')";
     if ($conn->query($sql)) {
-      echo 'NEW RECORD INSERTED SUCCESFULLY..!!';
+      echo 'REGISTRATION SUCCESFULL..!!';
       $sql = "SELECT id FROM viewers where phone_number ='$i'";
       $result = $conn->query($sql);
       if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         $stored_password_hash = $row['id'];
-        echo "<br>Your id:  $stored_password_hash";
+        echo "<br>Your id:  $stored_password_hash   ( Use this Id at Login) ";
       }
     }
 

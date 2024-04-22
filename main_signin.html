@@ -1,0 +1,219 @@
+<!-- <!DOCTYPE html>
+<html>
+<style>
+body{
+background-image:url('back.jpg');
+background-size:2000PX 900PX;
+text-align:left;
+background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust opacity as needed */
+}
+
+#cla{
+background-color:red;
+color:white;
+width:175px;
+height:30px;
+border-color: whitesmoke ;
+border-radius: 14px;
+
+}
+
+#box{
+  border-radius: 4px;
+  border-width: 1px;
+}
+p{
+color:lightseagreen;
+}
+span{
+ color: white; 
+}
+
+h3{
+background-color:black;
+background-size:auto;
+color:white;
+}
+
+H4,#a{
+color: orangered;
+}
+H2{
+ COLOR:RGB(0,163,108);
+}
+.div{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color:black;
+opacity:0.89;
+width:300px;
+border:15px ;
+padding:50px;
+margin:0 auto;
+margin-top:98px;
+margin-left:520px;
+border-radius:15px;
+}
+
+
+</STYLE>
+<head>
+<body>
+  
+ <div class="div">
+<span>USER-ID:</span>
+<form name="myForm1" action="password.php" method="post" >
+  <input type="text" name="userid" id="box"><br><br>
+ <span>PASSWORD:</span> <br>
+<input type="password" name="password" id="box"><br><br>
+<input type="submit" id="cla" value="login">
+</form>
+
+<small>
+  <p>forget password</P>
+ <span>For any technical support email to</span> 
+  <H4>oliveclove.helpdesk@gmail.com</H4> </small>
+
+
+</div>
+</body>
+</html>
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif; /* Netflix likely uses a custom font, but Arial is similar */
+        background-image: url("./sign-background.jpg");
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.6
+        ); /* Semi-transparent black overlay */
+        pointer-events: none; /* Allow pointer events to pass through the overlay */
+      }
+
+      .container {
+        position: relative; /* Ensure the container is positioned relative to the body */
+        width: 300px;
+        padding: 50px;
+        margin: 100px auto; /* Center the container vertically and horizontally */
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Semi-transparent black background */
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+        z-index: 1; /* Ensure the container is above the overlay */
+      }
+
+      .container input[type="text"],
+      .container input[type="password"] {
+        width: calc(100% - 20px); /* Adjust width to account for padding */
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.8
+        ); /* Semi-transparent white background */
+        z-index: 1; /* Ensure the input fields are above the overlay */
+      }
+
+      .container input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #e50914; /* Netflix red */
+        color: white;
+        cursor: pointer;
+      }
+
+      .container input[type="submit"]:hover {
+        background-color: #b2070f; /* Darker shade of Netflix red on hover */
+      }
+
+      .small {
+        color: white;
+        font-size: 12px;
+      }
+
+      .small a {
+        color: #b2070f; /* Netflix red */
+        text-decoration: none;
+      }
+
+      .small a:hover {
+        text-decoration: underline;
+      }
+
+      .netflix-title {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+     h2{
+      color: white;
+     }
+     a{
+       font-weight: bold;
+       padding-left: 3px;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="container">
+      <h2 class="hello">Sign In</h2>
+      <form name="myForm1" action="password.php" method="post">
+        <input type="text" name="userid" placeholder="User ID" /><br />
+        <input type="password" name="password" placeholder="Password" /><br />
+        <input type="submit" value="login" />
+      </form>
+      <div class="small">
+        <p>Forgot your password? <a href="#">Click here</a></p>
+        <p>New User? Register  <a href="./test.html">Click here</a></p>
+
+        <p>Need help? <a href="#">Contact Support</a></p>
+      </div>
+    </div>
+    <div class="netflix-title">movie ticket booking</div>
+  </body>
+</html>
